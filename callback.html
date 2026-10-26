@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Pinterest connection code</title><style>body{font-family:Georgia,serif;background:#f8f4ec;color:#3d3d3d;max-width:720px;margin:40px auto;padding:0 20px;line-height:1.6}h1{color:#6f8f72}a{color:#b5838d}</style>
+<style>#code{font-family:monospace;font-size:2.2em;word-break:break-all;background:#fff;border:2px solid #6f8f72;padding:16px;border-radius:8px}</style></head>
+<body><h1>DigiAgeByAmar Pin Scheduler</h1><p id="msg">Copy this code and paste it back to Grok Bot:</p><div id="code"></div>
+<script>
+var p=new URLSearchParams(location.search),c=p.get('code'),e=p.get('error');
+document.getElementById('code').textContent=c||('No code found'+(e?(': '+e+' '+(p.get('error_description')||'')):''));
+if(!c)document.getElementById('msg').textContent='Something went wrong:';
+</script></body></html>
